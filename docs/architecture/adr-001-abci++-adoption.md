@@ -353,7 +353,7 @@ func (app *App) ProcessProposal(req abci.RequestProcessProposal) abci.ResponsePr
    }
 
    // quickly compare the number of PFBs and messages, if they aren't
-   // identical, then  we already know this block is invalid
+   // identical, then we already know this block is invalid
    if len(commitments) != len(req.BlockData.Messages.MessagesList) {
        ... // logging and rejecting
    }
